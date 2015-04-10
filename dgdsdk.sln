@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "demo", "demo", "{92673316-A464-490B-B16D-AA35096B3811}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libs", "libs", "{8EAAC40B-C917-4B16-A0A5-D98278421003}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sdk", "sdk", "{A1009102-0459-485E-9AB1-DD8E356C35A2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dgdplaysdk", "dgdplaysdk\dgdplaysdk.vcproj", "{25DA3798-F2EF-4547-B958-1DCD4CDEB455}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sdktest", "sdktest\sdktest.vcproj", "{B4DDAB51-F8E3-48BD-999F-5EE9EDD97711}"
+	ProjectSection(ProjectDependencies) = postProject
+		{25DA3798-F2EF-4547-B958-1DCD4CDEB455} = {25DA3798-F2EF-4547-B958-1DCD4CDEB455}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "player", "player\player.vcproj", "{D6865CF8-C8D8-439A-B683-6023376BA7B2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{25DA3798-F2EF-4547-B958-1DCD4CDEB455} = {25DA3798-F2EF-4547-B958-1DCD4CDEB455}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25DA3798-F2EF-4547-B958-1DCD4CDEB455}.Debug|Win32.ActiveCfg = Debug|Win32
+		{25DA3798-F2EF-4547-B958-1DCD4CDEB455}.Debug|Win32.Build.0 = Debug|Win32
+		{25DA3798-F2EF-4547-B958-1DCD4CDEB455}.Release|Win32.ActiveCfg = Release|Win32
+		{25DA3798-F2EF-4547-B958-1DCD4CDEB455}.Release|Win32.Build.0 = Release|Win32
+		{B4DDAB51-F8E3-48BD-999F-5EE9EDD97711}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B4DDAB51-F8E3-48BD-999F-5EE9EDD97711}.Debug|Win32.Build.0 = Debug|Win32
+		{B4DDAB51-F8E3-48BD-999F-5EE9EDD97711}.Release|Win32.ActiveCfg = Release|Win32
+		{B4DDAB51-F8E3-48BD-999F-5EE9EDD97711}.Release|Win32.Build.0 = Release|Win32
+		{D6865CF8-C8D8-439A-B683-6023376BA7B2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D6865CF8-C8D8-439A-B683-6023376BA7B2}.Debug|Win32.Build.0 = Debug|Win32
+		{D6865CF8-C8D8-439A-B683-6023376BA7B2}.Release|Win32.ActiveCfg = Release|Win32
+		{D6865CF8-C8D8-439A-B683-6023376BA7B2}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B4DDAB51-F8E3-48BD-999F-5EE9EDD97711} = {92673316-A464-490B-B16D-AA35096B3811}
+		{D6865CF8-C8D8-439A-B683-6023376BA7B2} = {92673316-A464-490B-B16D-AA35096B3811}
+		{25DA3798-F2EF-4547-B958-1DCD4CDEB455} = {A1009102-0459-485E-9AB1-DD8E356C35A2}
+	EndGlobalSection
+EndGlobal
